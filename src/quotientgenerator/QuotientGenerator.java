@@ -1,4 +1,4 @@
-12/*
+/*
 Nothing here.
  */
 package quotientgenerator;
@@ -20,28 +20,28 @@ public class QuotientGenerator
         strQ1 = "Enter Dividend: ";
     System.out.println(strQ1);
     Scanner Reader = new Scanner(System.in);  // Reading from System.in
-    int n = Reader.nextInt(); // Scans the next token of the input as an int.
+    int dividend = Reader.nextInt(); // Scans the next token of the input as an int.
     int i;
     int c = 0;
-       for  (i = 1;i <= n; i++)
+       for  (i = 1;i <= dividend; i++)
        {
-            if (n % i == 0)
+            if (dividend % i == 0)
             {
                 if (1 == i)
                 {
                 }
-                else if (i == n)
+                else if (i == dividend)
                 {
                     if (c == 0)
                     {
-                        System.out.println(n + " is PRIME");
+                        System.out.println(dividend + " is PRIME");
                     }
                 }
                 else
                 {
-                    if (i < n/i)
+                    if (i < dividend/i)
                     {
-                        System.out.println (i + " x " + n/i);
+                        System.out.println (i + " x " + dividend/i);
                         c++;
                     }
                 }
